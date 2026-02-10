@@ -14,7 +14,7 @@ public class Booking {
             throw new IllegalArgumentException("Customer name cannot be null or empty");
         }
         this.id = id;
-        this.customerName = customerName;
+        this.customerName = customerName.trim();
         this.tickets = new ArrayList<>();
         this.totalPrice = 0.0;
     }

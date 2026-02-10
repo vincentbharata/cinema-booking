@@ -14,7 +14,7 @@ public class Movie {
             throw new IllegalArgumentException("Movie duration must be positive");
         }
         this.id = id;
-        this.title = title;
+        this.title = title.trim();
         this.durationMinutes = durationMinutes;
         this.genre = genre;
     }

@@ -18,7 +18,7 @@ public class Ticket {
         }
         this.id = id;
         this.movie = movie;
-        this.seatNumber = seatNumber;
+        this.seatNumber = seatNumber.trim();
         this.price = price;
     }
 
